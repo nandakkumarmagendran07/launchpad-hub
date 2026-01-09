@@ -1,14 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import ChatInterface from '@/components/ChatInterface';
 
-const Index = () => {
+export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 sm:p-8">
+      <div className="w-full max-w-3xl mx-auto">
+        <header className="text-center mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary">
+            Real-time Data Retrieval Bot
+          </h1>
+          <p className="text-muted-foreground mt-2 text-lg">
+            Your AI-powered administrative assistant
+          </p>
+        </header>
+        <ChatInterface />
       </div>
-    </div>
+    </main>
   );
-};
-
-export default Index;
+}
